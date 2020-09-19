@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.capp.test;
+
+import com.mycompany.capp.config.SpringRootConfig;
+import com.mycompany.capp.dao.UserDAO;
+import com.mycompany.capp.domain.User;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+/**
+ *
+ * @author manish
+ */
+public class TestUserDAOFindSingleRecord {
+
+    public static void main(String[] args) {
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringRootConfig.class);
+        UserDAO userDAO = ctx.getBean(UserDAO.class);
+        User u = userDAO.findById(3);
+
+        System.out.println("-------------User Details--------------");
+        System.out.println(u.getUserid());
+        System.out.println(u.getName());
+        System.out.println(u.getPhone());
+        System.out.println(u.getEmail());
+        System.out.println(u.getAddress());
+        System.out.println(u.getLoginName());
+        System.out.println(u.getLoginStatus());
+        System.out.println(u.getRole());
+
+    }
+}
