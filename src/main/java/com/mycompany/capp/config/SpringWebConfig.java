@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 /**
  *
- * @author manish
+ * @author Sarishti
  */
 @Configuration
 @ComponentScan(basePackages = {"com.mycompany"})
