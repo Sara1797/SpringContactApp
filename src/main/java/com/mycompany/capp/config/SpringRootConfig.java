@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 /**
  *
- * @author manish
+ * @author Sarishti
  */
 @Configuration
 @ComponentScan(basePackages = {"com.mycompany.capp.dao","com.mycompany.capp.service"})
