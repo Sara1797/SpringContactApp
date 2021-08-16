@@ -11,7 +11,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 /**
  *
- * @author manish
+ * @author Sarishti
  */
 public class ContactAppDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 
